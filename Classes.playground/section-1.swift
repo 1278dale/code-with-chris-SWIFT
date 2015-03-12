@@ -6,12 +6,31 @@ var str = "Hello, playground"
 
 class Person {
     
+    var Name:String = "Initial Name"
+    
     init () {
-        println("New person initialised")
-        /**any code between curly braces gets executed when a new object of this class is created */
+        self.sayCheese()
     }
+    
+    func sayCheese () {
+        println("Cheese")
+       
+    }
+    
 }
 
-Person() /**created a new object */
+var firstPerson = Person()
 
-var a = Person() /** assigned the person object to the variable a, can reference the person class using 'a' */
+firstPerson.Name
+firstPerson.Name = "Alice"
+firstPerson.Name
+
+var secondPerson = Person()
+
+secondPerson.Name = "Bob"
+
+firstPerson.Name
+
+
+
+
