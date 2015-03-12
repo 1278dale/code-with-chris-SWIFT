@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="War" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="inB-4H-oeu" userLabel="FirstCardImage">
+                                <rect key="frame" x="66" y="215" width="120" height="170"/>
+                                <color key="backgroundColor" red="1" green="0.068427325336502198" blue="0.13055561484576683" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="kZO-4S-hdV"/>
+                                    <constraint firstAttribute="width" constant="120" id="uKH-n8-AcY" userLabel="Width - (120) - First Card Image"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jPc-Go-FSy" userLabel="SecondCardImage">
+                                <rect key="frame" x="290" y="215" width="120" height="170"/>
+                                <color key="backgroundColor" red="0.088718947161049222" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="inB-4H-oeu" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="50" id="KH5-19-ODW"/>
+                            <constraint firstItem="jPc-Go-FSy" firstAttribute="width" secondItem="inB-4H-oeu" secondAttribute="width" id="Os6-ck-HMy"/>
+                            <constraint firstAttribute="centerY" secondItem="jPc-Go-FSy" secondAttribute="centerY" id="Qde-fx-M87"/>
+                            <constraint firstItem="jPc-Go-FSy" firstAttribute="height" secondItem="inB-4H-oeu" secondAttribute="height" id="ah9-X3-dBu"/>
+                            <constraint firstAttribute="centerY" secondItem="inB-4H-oeu" secondAttribute="centerY" id="ikH-HO-2ZS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jPc-Go-FSy" secondAttribute="trailing" constant="174" id="kL6-11-J66"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
