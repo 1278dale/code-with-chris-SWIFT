@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>0C4EE09C-34D3-4DCC-AA7E-A3F5CEBD1ED9</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Hello World</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9104851E2CD8C8FEBA14173E85A30D66C370A137</key>
+		<string>https://github.com/1278dale/code-with-chris-SWIFT.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Hello World/Hello World.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9104851E2CD8C8FEBA14173E85A30D66C370A137</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/1278dale/code-with-chris-SWIFT.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9104851E2CD8C8FEBA14173E85A30D66C370A137</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9104851E2CD8C8FEBA14173E85A30D66C370A137</string>
+			<key>IDESourceControlWCCName</key>
+			<string>codewithchris</string>
+		</dict>
+	</array>
+</dict>
+</plist>
