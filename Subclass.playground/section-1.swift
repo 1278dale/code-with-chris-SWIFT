@@ -25,9 +25,8 @@ class Superhuman : Person {
     
     var AlterEgoName:String = "Clark"
     
-    override init() {
-        
-        super.init()
+    override init () {
+            super.init()
         
         super.Name = "Super Duper"
     }
@@ -36,12 +35,18 @@ class Superhuman : Person {
         println("I'm flying")
     }
     
-    override func Walk() {
+    override func Walk(){
         println("I'm walking really fast")
         
         super.Walk()
     }
+    
 }
 
 var b = Superhuman()
 b.Walk()
+
+
+
+
+
