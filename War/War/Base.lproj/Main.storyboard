@@ -24,7 +24,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ROq-JT-j23" userLabel="CardContainerView">
                                 <rect key="frame" x="160" y="215" width="280" height="170"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="inB-4H-oeu" userLabel="FirstCardImage">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="inB-4H-oeu" userLabel="FirstCardImage">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="170"/>
                                         <color key="backgroundColor" red="1" green="0.068427325336502198" blue="0.13055561484576683" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -32,7 +32,7 @@
                                             <constraint firstAttribute="width" constant="120" id="uKH-n8-AcY" userLabel="Width - (120) - First Card Image"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jPc-Go-FSy" userLabel="SecondCardImage">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="jPc-Go-FSy" userLabel="SecondCardImage">
                                         <rect key="frame" x="160" y="0.0" width="120" height="170"/>
                                         <color key="backgroundColor" red="0.011738531681628639" green="0.12895456324348253" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     </imageView>
@@ -95,6 +95,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="back" width="120" height="170"/>
         <image name="background" width="667" height="622"/>
     </resources>
 </document>
