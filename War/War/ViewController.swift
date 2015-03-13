@@ -27,6 +27,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func playRoundTapped(sender: UIButton) {
+        
+        self.playRoundButton.setTitle("Play Round", forState: UIControlState.Normal)
+        
+    }
 
 }
 
