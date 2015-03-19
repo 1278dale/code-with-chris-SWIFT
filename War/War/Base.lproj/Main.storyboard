@@ -17,8 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="bo4-23-LSK" userLabel="BackgroundImage">
-                                <rect key="frame" x="16" y="-6" width="568" height="606"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="bo4-23-LSK" userLabel="BackgroundImage">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" red="0.6100940273817459" green="1" blue="0.60908302747491216" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ROq-JT-j23" userLabel="CardContainerView">
@@ -60,33 +60,75 @@
                                             <action selector="playRoundTapped:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ABh-qE-Ydg"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mfn-uk-4jo">
+                                        <rect key="frame" x="10" y="85" width="54.5" height="119.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8w-73-SRL">
+                                        <rect key="frame" x="20.5" y="51" width="33" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnb-mN-FWi">
+                                        <rect key="frame" x="498" y="85" width="59.5" height="119.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="100"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enemy" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hrO-8p-g7n">
+                                        <rect key="frame" x="497.5" y="51" width="60.5" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="mfn-uk-4jo" firstAttribute="leading" secondItem="j3N-oF-jj4" secondAttribute="leading" constant="10" id="1rI-bs-VOw"/>
+                                    <constraint firstAttribute="trailing" secondItem="dnb-mN-FWi" secondAttribute="trailing" constant="10" id="7X2-yB-orW"/>
+                                    <constraint firstAttribute="bottom" secondItem="dnb-mN-FWi" secondAttribute="bottom" constant="10" id="F6O-SC-Uyn"/>
                                     <constraint firstAttribute="centerY" secondItem="MIX-4z-Rlr" secondAttribute="centerY" id="I0Z-hJ-ura"/>
+                                    <constraint firstAttribute="bottom" secondItem="mfn-uk-4jo" secondAttribute="bottom" constant="10" id="NeI-eM-taQ"/>
                                     <constraint firstAttribute="centerX" secondItem="MIX-4z-Rlr" secondAttribute="centerX" id="ZbI-S7-0E8"/>
+                                    <constraint firstAttribute="trailing" secondItem="hrO-8p-g7n" secondAttribute="trailing" constant="10" id="d5m-sm-lNc"/>
+                                    <constraint firstItem="hrO-8p-g7n" firstAttribute="centerX" secondItem="dnb-mN-FWi" secondAttribute="centerX" id="g6c-Ik-fRN"/>
+                                    <constraint firstItem="mfn-uk-4jo" firstAttribute="top" secondItem="y8w-73-SRL" secondAttribute="bottom" constant="10" id="joi-zI-Bx1"/>
                                     <constraint firstAttribute="centerX" secondItem="MIX-4z-Rlr" secondAttribute="centerX" id="mLH-Yd-xbe"/>
+                                    <constraint firstItem="dnb-mN-FWi" firstAttribute="top" secondItem="hrO-8p-g7n" secondAttribute="bottom" constant="10" id="srT-jA-EpM"/>
+                                    <constraint firstItem="y8w-73-SRL" firstAttribute="centerX" secondItem="mfn-uk-4jo" secondAttribute="centerX" id="vbA-MG-IP5"/>
                                     <constraint firstAttribute="bottom" secondItem="MIX-4z-Rlr" secondAttribute="bottom" constant="30" id="yBW-44-lJL"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="war-logo" translatesAutoresizingMaskIntoConstraints="NO" id="xJ8-j9-4ZY">
+                                <rect key="frame" x="80" y="30" width="440" height="160"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="ROq-JT-j23" secondAttribute="centerX" id="18a-Si-gJt"/>
                             <constraint firstAttribute="centerY" secondItem="ROq-JT-j23" secondAttribute="centerY" id="4bX-mg-k9f"/>
                             <constraint firstItem="bo4-23-LSK" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="54t-bl-QNO"/>
+                            <constraint firstItem="xJ8-j9-4ZY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="64" id="9pk-Ow-70n"/>
+                            <constraint firstItem="xJ8-j9-4ZY" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="Agf-iD-bWk"/>
                             <constraint firstItem="j3N-oF-jj4" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="D7e-SG-s4r"/>
+                            <constraint firstItem="ROq-JT-j23" firstAttribute="top" secondItem="xJ8-j9-4ZY" secondAttribute="bottom" constant="25" id="EWj-Dw-Eiy"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="bo4-23-LSK" secondAttribute="bottom" id="P4N-2n-uvK"/>
                             <constraint firstItem="j3N-oF-jj4" firstAttribute="top" secondItem="ROq-JT-j23" secondAttribute="bottom" id="PZZ-hZ-xkd"/>
                             <constraint firstAttribute="trailing" secondItem="bo4-23-LSK" secondAttribute="trailing" id="bGa-Y2-0yf"/>
                             <constraint firstItem="j3N-oF-jj4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="dVg-cg-yuE"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="j3N-oF-jj4" secondAttribute="bottom" id="f6M-ww-oXR"/>
                             <constraint firstItem="bo4-23-LSK" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="k10-DI-Zlj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xJ8-j9-4ZY" secondAttribute="trailing" constant="64" id="qee-C6-dkc"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="backgroundImageView" destination="bo4-23-LSK" id="zKW-iV-OUs"/>
+                        <outlet property="enemyScore" destination="dnb-mN-FWi" id="fn8-LO-K1Q"/>
                         <outlet property="firstCardImageView" destination="inB-4H-oeu" id="Z44-zd-XyV"/>
                         <outlet property="playRoundButton" destination="MIX-4z-Rlr" id="zC1-5l-Y6K"/>
+                        <outlet property="playerScore" destination="mfn-uk-4jo" id="oyS-gd-VqT"/>
                         <outlet property="secondCardImageView" destination="jPc-Go-FSy" id="ZNU-UV-QuZ"/>
                     </connections>
                 </viewController>
@@ -96,6 +138,7 @@
     </scenes>
     <resources>
         <image name="back" width="120" height="170"/>
-        <image name="background" width="667" height="622"/>
+        <image name="background" width="800" height="399"/>
+        <image name="war-logo" width="136" height="50"/>
     </resources>
 </document>

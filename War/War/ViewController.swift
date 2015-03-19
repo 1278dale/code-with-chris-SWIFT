@@ -14,7 +14,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var secondCardImageView: UIImageView!
     @IBOutlet weak var playRoundButton: UIButton!
     @IBOutlet weak var backgroundImageView: UIImageView!
+    
+    @IBOutlet weak var playerScore: UILabel!
+    @IBOutlet weak var enemyScore: UILabel!
+    
+    
     var cardNamesArray:[String] = ["card1", "card2", "card3", "card4", "card5", "card6", "card7", "card8", "card9", "card10", "card11", "card12", "card13"]
+    
+    var playerScoreTotal = 0
+    var enemyScoreTotal = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,6 +55,21 @@ class ViewController: UIViewController {
         
         self.secondCardImageView.image = UIImage(named: secondCardString)
         
+        
+        //Determine the higher card
+        if firstRandomNumber > secondRandomNumber {
+            //TO DO : first card is larger
+            playerScoreTotal += 1
+            self.playerScore.text = String(playerScoreTotal)
+        }
+        else if firstRandomNumber == secondRandomNumber {
+            //TO DO: Numbers are equal
+        }
+        else {
+            //TO DO: second card is larger
+            enemyScoreTotal += 1
+            self.enemyScore.text = String(enemyScoreTotal)
+        }
     }
 
 }
